@@ -342,6 +342,265 @@ box img {
 
 <img width="717" height="503" alt="image" src="https://github.com/user-attachments/assets/1d74459a-40c6-4b2f-8623-1f0e2b35fee8" />
 
+## Membuat Tampilan About
+Bagian `<header>` menampilkan judul halaman, sedangkan `<nav>` berisi menu navigasi agar pengguna dapat berpindah ke halaman lain seperti Home, Artikel, dan Kontak. Pada bagian `<section id="main">`, terdapat dua bagian utama yaitu deskripsi singkat tentang tujuan website dan daftar portfolio berupa beberapa project yang pernah dibuat. Terakhir, `<footer>` menampilkan informasi hak cipta di bagian bawah halaman. Seluruh elemen dibungkus dalam `<div id="container">` agar layout lebih teratur dan mudah diatur tampilannya dengan CSS.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tentang Kami</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <section id="main">
+            <h2>Deskripsi</h2>
+            <p>Website ini dibuat sebagai latihan dasar layout menggunakan HTML5 dan CSS Float.</p>
+
+            <h2>Portfolio</h2>
+            <ul>
+                <li>Project 1 - Desain Web</li>
+                <li>Project 2 - Sistem Informasi Penjualan</li>
+                <li>Project 3 - Aplikasi kalkulator</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+<img width="592" height="275" alt="image" src="https://github.com/user-attachments/assets/cd0cd628-ad04-4043-893f-e394c64d7fa9" />
+
+## Membuat Tampilan Artikel
+Bagian `<header>` menampilkan judul utama situs, sedangkan `<nav>` berisi menu navigasi agar pengguna bisa berpindah ke halaman lain seperti Home, About, dan Kontak. Pada bagian `<main>`, terdapat dua artikel yang ditulis menggunakan tag `<article>`. Masing-masing artikel memiliki judul, gambar, dan paragraf isi. Artikel pertama menampilkan gambar di kiri, sedangkan artikel kedua menggunakan kelas right-img agar gambar berada di kanan. Di sisi kanan halaman terdapat `<aside>` yang berisi widget berjudul “Artikel Lain” yang menampilkan daftar tautan artikel tambahan. Terakhir, bagian `<footer>` menampilkan informasi hak cipta di bagian bawah halaman. Semua elemen dibungkus dalam `<div id="container">` agar tata letaknya rapi dan mudah diatur dengan CSS.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Layout Sederhana</h1>
+    </header>
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="artikel.html" class="active">Artikel</a>
+      <a href="about.html">About</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <section id="wrapper">
+      <section id="main">
+        <article class="entry">
+          <h2>Judul Artikel Pertama</h2>
+          <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+          <p>
+            Ini adalah contoh artikel pertama. Kamu bisa menuliskan isi artikel atau berita di sini.
+            Artikel ini menggunakan elemen <code>&lt;article&gt;</code> yang termasuk bagian dari HTML5 semantic element.
+          </p>
+        </article>
+
+        <hr class="divider">
+
+        <article class="entry">
+          <h2>Judul Artikel Kedua</h2>
+          <img src="https://dummyimage.com/150/3e73e6/fff.png" alt="" class="right-img">
+          <p>
+            Ini adalah contoh artikel kedua. Kamu bisa menambahkan gambar dan teks sesuai kebutuhan.
+            Gambar bisa berada di kiri atau kanan sesuai kelas CSS yang digunakan.
+          </p>
+        </article>
+      </section>
+
+      <aside id="sidebar">
+        <div class="widget-box">
+          <h3 class="title">Artikel Lain</h3>
+          <ul>
+            <li><a href="#">Tips Desain Web</a></li>
+            <li><a href="#">Belajar CSS Layout</a></li>
+            <li><a href="#">Responsive Design</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+    </footer>
+  </div>
+</body>
+</html>
+```
+
+<img width="493" height="380" alt="image" src="https://github.com/user-attachments/assets/e6ec3649-6e47-43f3-bad7-a65e77046bd3" />
+
+## Membuat Tampilan Kotak
+Kode ini membuat halaman “Kontak Kami” yang berfungsi sebagai tempat pengguna mengirim pesan atau pertanyaan. Bagian `<header>` menampilkan judul halaman, sedangkan `<nav>` berisi menu navigasi untuk berpindah ke halaman lain seperti Home, Artikel, dan About. Pada bagian `<section id="main">`, terdapat formulir kontak yang dibuat menggunakan elemen `<form>`. Di dalamnya terdapat input untuk nama, email, serta kolom teks <textarea> untuk menulis pesan. Tombol `<button type="submit">` digunakan untuk mengirim data formulir. Terakhir, bagian `<footer>` menampilkan teks hak cipta di bawah halaman. Semua elemen dibungkus dalam `<div id="container">` agar tampilan halaman rapi dan terpusat.
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Kontak Kami</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+
+        <section id="main">
+            <h2>Hubungi Kami</h2>
+            <form>
+                <label>Nama:</label><br>
+                <input type="text" name="nama" placeholder="Masukkan nama"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Masukkan email"><br><br>
+
+                <label>Pesan:</label><br>
+                <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..."></textarea><br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+<img width="490" height="254" alt="image" src="https://github.com/user-attachments/assets/16283971-2088-402a-b417-62319e8060eb" />
+
+## PERTANYAAN DAN TUGAS
+jawaban 1
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Tentang Saya</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+
+        <section id="main">
+            <h2>Deskripsi</h2>
+            <p>Hai perkenalkan nama saya Lola Seftyliani, saya mahasiswi Universitas Pelita Bangsa fakultas teknik program studi teknik informatika.</p>
+
+            <h2>Hobi saya</h2>
+            <ul>
+                <li>Menonton film</li>
+                <li>Mendengarkan lagu</li>
+                <li>Membaca novel</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+<img width="488" height="190" alt="image" src="https://github.com/user-attachments/assets/f1452b32-014a-4f5c-85b7-f6b34dfbeb3e" />
+
+Jawaban 2
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Kontak Saya dibawah ini</h1>
+        </header>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+
+        <section id="main">
+            <h2>Formulir Kontak</h2>
+            <form>
+                <label>Nama:</label><br>
+                <input type="text" name="nama" placeholder="Masukkan nama"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Masukkan email"><br><br>
+
+                <label>Pesan:</label><br>
+                <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..."></textarea><br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+<img width="487" height="254" alt="image" src="https://github.com/user-attachments/assets/c0d6623f-5a2a-4746-b9d5-85a504c34ed7" />
+
 
 
 
