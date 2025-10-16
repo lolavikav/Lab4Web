@@ -146,7 +146,7 @@ Kode ini membentuk struktur halaman web dengan layout sederhana menggunakan elem
 
 ## CSS Style
 Kode CSS ini mengatur tampilan layout web agar terlihat rapi dan terstruktur. Font Open Sans diimpor dari Google Fonts, dan reset CSS digunakan untuk menghapus margin serta padding bawaan. Bagian `header` dan `nav` mengatur tampilan judul serta menu navigasi dengan warna biru dan efek hover. Elemen `#hero` digunakan sebagai banner utama dengan teks besar dan latar abu muda. Bagian `#main` dan `#sidebar` diatur sejajar menggunakan float untuk membentuk dua kolom. Widget di sidebar diberi border, warna biru pada judul, serta efek saat tautan diarahkan. Footer diberi latar hitam dan teks abu terang di bagian bawah halaman. Kelas `.box` membuat tiga kolom konten sejajar dengan gambar lingkaran, sedangkan `.entry` mengatur artikel agar rapi dengan garis pemisah di antaranya.
-```
+```css
 /* import google font */
 @import
 url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
