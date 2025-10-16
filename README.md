@@ -45,7 +45,9 @@ float: none;
 </section>
 ```
 <img width="660" height="300" alt="Screenshot 2025-10-16 134751" src="https://github.com/user-attachments/assets/5458bac1-dde9-4d2b-9d25-054028883ded" />
+
 ## Membuat Layout Sederhana
+
 Kode ini membentuk struktur halaman web dengan layout sederhana menggunakan elemen semantik HTML5. Bagian `<header>` menampilkan judul halaman, sedangkan `<nav>` berisi menu navigasi agar pengguna bisa berpindah antarhalaman seperti Home, Artikel, About, dan Kontak. Bagian `<section id="hero">` digunakan sebagai tampilan pembuka atau banner utama yang berisi teks dan tombol. Selanjutnya, area utama halaman dibungkus dalam `<section id="wrapper">` yang terdiri dari <main> untuk konten utama berisi kotak dan artikel, serta `<aside>` sebagai sidebar yang menampilkan widget link dan teks tambahan. Di bagian bawah, `<footer>` menampilkan informasi hak cipta. Semua elemen dibungkus dalam `<div id="container">` agar tata letaknya mudah diatur menggunakan CSS.
 ```html
 <!DOCTYPE html>
@@ -337,6 +339,7 @@ box img {
 }
 ```
 <img width="680" height="462" alt="image" src="https://github.com/user-attachments/assets/d66f8fb8-058a-4745-8b00-400d73d11edc" />
+
 <img width="717" height="503" alt="image" src="https://github.com/user-attachments/assets/1d74459a-40c6-4b2f-8623-1f0e2b35fee8" />
 
 
